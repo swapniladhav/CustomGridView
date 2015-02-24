@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.viewswitcher.MainActivity" 
+    >
+
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/religion"
+                android:layout_alignRight="@+id/fullName"
+                android:layout_alignTop="@+id/religion"
+                android:layout_toRightOf="@+id/religion"
+                android:fontFamily="Times New Roman"
+                android:gravity="left|center"
+                android:text="Religion"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/religion"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/fullName"
+                android:layout_below="@+id/fullName"
+                android:layout_marginTop="25dp"
+                android:fontFamily="Times New Roman"
+                android:gravity="left|center"
+                android:text="cast"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="58dp"
+                android:fontFamily="Times New Roman"
+                android:gravity="left|center"
+                android:text="Full Name"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/fullName"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/images"
+                android:text=" " />
+
+        </RelativeLayout>
